@@ -11,9 +11,9 @@ services:
       - ./openxpki-config/contrib/sql/schema-mariadb.sql:/docker-entrypoint-initdb.d/schema-mariadb.sql
     environment:
       MYSQL_DATABASE: openxpki
-      MYSQL_USER: openxpki
-      MYSQL_PASSWORD: openxpki 
-      MYSQL_ROOT_PASSWORD: topsecret
+      MYSQL_USER: root
+      MYSQL_PASSWORD:  
+      MYSQL_ROOT_PASSWORD: 
 
   openxpki-server:
 #    restart: always
